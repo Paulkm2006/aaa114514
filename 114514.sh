@@ -17,6 +17,7 @@ rpm -e --nodeps --justdb nss-softokn-freebl
 rpm -e --nodeps --justdb nss-sysinit
 rpm -e --nodeps --justdb nss-tools
 rpm -e --nodeps --justdb nss-util
+yum remove iptables -y
 yum downgrade glibc* device-mapper* mariadb* -y
 yum localinstall http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/n/nss-3.44.0-7.vl7.x86_64.rpm -y 
 yum localinstall http://repo.virtuozzo.com/vzlinux/7/x86_64/os/Packages/n/nss-softokn-freebl-3.44.0-8.vl7.i686.rpm -y
